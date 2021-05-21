@@ -60,7 +60,7 @@ impl Io {
         }
     }
 
-    pub fn key_from(nibble: u8) -> Option<Key> {
+    pub const fn key_from(nibble: u8) -> Option<Key> {
         return match nibble {
             0x1 => Some(Key::Key1),
             0x2 => Some(Key::Key2),
